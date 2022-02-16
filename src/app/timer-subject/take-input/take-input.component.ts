@@ -16,23 +16,25 @@ export class TakeInputComponent implements OnInit {
     this.connect.timercount.subscribe(val=>console.log(val))
   }
 
-  Call(m:any){
+  call(m:any){
     this.connect.setCount(m);
     this.clickS=this.clickS+1
+    
     if(this.clickS%2==0){
+
       console.log("inside Pause ----------------------")
       this.connect.setClick("pause");
-    //   let date=new Date()
-    //   this.d=date.getSeconds()
+
     }
     if(this.clickS%2!==0){
       console.log("inside Start-------------");
-      this.connect.setClick("pause");
+      this.connect.setClick("start");
     }
   }
 
   reset(){
     console.log('reset')
+    this.connect.setClick("reset")
   }
 
 }

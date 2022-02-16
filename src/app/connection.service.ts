@@ -15,6 +15,7 @@ private serviceUrl="https://jsonplaceholder.typicode.com/users"
 public timercount=new BehaviorSubject(0);
 public clickValue=new BehaviorSubject('');
 
+
   constructor(private http: HttpClient) {}
 
 public getProd(){
@@ -35,6 +36,9 @@ public setClick(c:string){
   }
   if(c==="start"){
     this.clickValue.next("start")
+  }
+  if(c==="reset"){
+    this.clickValue.next("reset")
   }
 }
 
