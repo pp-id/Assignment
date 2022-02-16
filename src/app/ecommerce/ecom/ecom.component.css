@@ -1,0 +1,16 @@
+.grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .inn{
+      border:1px solid black;
+      margin :5px;
+      
+  }
+  .list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-auto-rows: minmax(100px, auto); */
+  }

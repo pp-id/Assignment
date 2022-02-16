@@ -1,0 +1,9 @@
+
+<div *ngFor="let log of timeArr;let i=index">
+  <span *ngIf="i%2==0">
+    Started At:{{log}}
+  </span>
+  <span *ngIf="i%2!==0">
+    Paused At:{{log}}
+  </span>
+</div>

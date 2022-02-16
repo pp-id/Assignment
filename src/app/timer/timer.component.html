@@ -1,0 +1,25 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+    <app-display [message]="mess"></app-display>
+    </div>
+
+    <div class="col">
+    <app-take-input (start)="Start($event)" (reset)="Reset()" ></app-take-input>
+
+</div>
+
+<div class="row">
+<div class="col">
+<app-logging [startedAt]="startTime" [pausedAt]="pausedTime"></app-logging>
+</div>
+<div class="col">
+<app-click-counts [clic]="ClickS" [clicP]="ClickP"></app-click-counts>
+</div>
+
+</div>
+
+<router-outlet></router-outlet>
+
+</div>

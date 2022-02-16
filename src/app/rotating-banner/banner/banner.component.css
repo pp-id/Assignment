@@ -1,0 +1,32 @@
+.banner{
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    margin:50px;
+    background-color: aquamarine;
+    animation: rotation 8s infinite linear;
+	/* -webkit-animation: rotation 2s infinite linear; */   
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  /* @-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+} */
+
